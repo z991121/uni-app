@@ -1,129 +1,141 @@
-# hello-uniapp
+# uniapp
 
-`uni-app`框架示例，一套代码，同时发行到iOS、Android、H5、小程序等多个平台，请使用手机在下方扫码快速体验`uni-app`的强大功能。[官方文档](https://uniapp.dcloud.net.cn/)
+## 一、uniapp的简介及使用
+### **背景介绍**
 
-## 快速上手
-hello-uniapp 示例工程可以通过两种方式创建， 一种是 HBuilderX, 配套 IDE，集成开发；另一种是 CLI 创建；推荐前者。
-### 通过 HBuilderX 可视化界面创建（推荐）
+uni-app是一个使用Vue.js开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web(响应式)、以及各种小程序(微信/支付宝/百度/头条/QQ/快手/钉钉/淘宝)、快应用等多个平台。
 
-可视化的方式比较简单，HBuilderX内置相关环境，开箱即用，无需配置nodejs。
+项目官网：https://uniapp.dcloud.io
 
-开始之前，开发者需先下载安装如下工具：
+项目地址：https://github.com/dcloudio/hello-uniapp
 
-- HBuilderX：[官方IDE下载地址](https://www.dcloud.io/hbuilderx.html)
+## 二、将uniapp项目通过云开发平台，快速发布为网站
 
-HBuilderX是通用的前端开发工具，但为`uni-app`做了特别强化，请下载App开发版。
+### **背景介绍**
+云开发平台是阿里云面向广大开发者提供的免费云上研发工作平台，可以实现开发的全流程。关于云开发平台的介绍：https://help.aliyun.com/product/161245.html。
 
-由于截图在 github 不便浏览，参见官方文档 [HBuilderX 可视化界面创建](https://uniapp.dcloud.net.cn/quickstart?id=_1-%e9%80%9a%e8%bf%87-hbuilderx-%e5%8f%af%e8%a7%86%e5%8c%96%e7%95%8c%e9%9d%a2)
+### **最佳实践**
 
-### 通过 vue-cli 创建
+**1.创建uniapp代码项目**
+直接fork本项目到自己的GitHub账号下。
 
-```
-npm install -g @vue/cli
-```
+**2.打开云开发平台，完成阿里云账号登陆注册，同意云开发平台服务协议**https://workbench.aliyun.com/application
 
-#### 创建uni-app
+<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/sign.png" width="400">
 
-**使用正式版**（对应HBuilderX最新正式版）
+**3.创建云开发平台-前端部署应用**
 
-```
-vue create -p dcloudio/uni-preset-vue my-project
-```
+3.1 创建前端应用
 
-**使用alpha版**（对应HBuilderX最新alpha版）
+依次点击「应用列表」「前端应用」「新建前端应用」按钮。首先绑定GitHub帐号，允许云开发平台构建、发布你的GitHub代码为可访问的网站。
 
-```
-vue create -p dcloudio/uni-preset-vue#alpha my-alpha-project
-```
+<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/create_0.png" width="200">
 
-此时，会提示选择项目模板，选择 `hello uni-app` 项目模板，如下所示：
+<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/oauth.png" width="200">
 
-<div>
-<img src="https://img.cdn.aliyun.dcloud.net.cn/guide/uniapp/h5-cli-01.png" width="300">
-</div>
+选择第一步中的代码仓库、主干分支等，并点击下一步。主干分支一般指的是代码的master或main等分支。
 
-创建好后，进入项目目录
-```
-cd my-project
-```
+<img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/uniapp/create_1.png" width="300">
 
-执行该命令运行到 h5 端
-```
-npm run dev:h5
-```
+填写基本信息并点击「完成」。稍等片刻创建成功后，将进入到应用部署界面。
 
-欢迎提 issues，推荐到[官方社区](https://ask.dcloud.net.cn/explore/)提问。
+<img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/uniapp/create_2.png" width="600">
 
-## 扫码体验
+3.2 开发部署配置
 
-<div class="quick">
-    <p>一套代码编到10个平台，这不是梦想。眼见为实，扫描10个二维码，亲自体验最全面的跨平台效果！</p>
-    <div style="display: flex;">
-      <a href="//m3w.cn/uniapp" target="_blank" class="clear-style barcode-view">
-        <div class="barcode-img-box">
-          <img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/ba7d0750-517d-11eb-bdc1-8bd33eb6adaa.png" width="160" />
-        </div>
-        <b>Android版</b>
-      </a>
-      <a href="https://itunes.apple.com/cn/app/hello-uni-app/id1417078253?mt=8" target="_blank" class="clear-style barcode-view">
-        <div class="barcode-img-box">
-          <img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/bb3ef7c0-517d-11eb-bdc1-8bd33eb6adaa.png" width="160" />
-        </div>
-        <b>iOS版</b>
-      </a>
-      <a href="https://hellouniapp.dcloud.net.cn/" target="_blank" class="clear-style barcode-view">
-        <div class="barcode-img-box">
-          <img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/bb3ef7c0-517d-11eb-bdc1-8bd33eb6adaa.png" width="160" />
-        </div>
-        <b>H5版</b>
-      </a>
-      <a href="//m3w.cn/uniapp" target="_blank" class="clear-style barcode-view">
-        <div class="barcode-img-box"><img src="//img.cdn.aliyun.dcloud.net.cn/guide/uniapp/gh_33446d7f7a26_430.jpg" width="160" /></div>
-        <b>微信小程序版</b>
-      </a>
-      <a href="//m3w.cn/uniapp" target="_blank" class="clear-style barcode-view">
-        <div class="barcode-img-box"><img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/b131e0d0-517d-11eb-a16f-5b3e54966275.png" width="160" /></div>
-        <b>支付宝小程序版</b>
-      </a>
-    </div>
-    <div class="flex-img-group-view" style="margin-top: 20px;">
-      <a href="//m3w.cn/uniapp" target="_blank" class="clear-style barcode-view">
-        <div class="barcode-img-box"><img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/b204e840-517d-11eb-8ff1-d5dcf8779628.png" width="160" /></div>
-        <b>百度小程序版</b>
-      </a>
-      <a href="//m3w.cn/uniapp" target="_blank" class="clear-style barcode-view">
-        <div class="barcode-img-box">
-          <img src="https://img.cdn.aliyun.dcloud.net.cn/guide/uniapp/mp-toutiao.png" width="160" />
-        </div>
-        <b>字节跳动小程序版</b>
-      </a>
-      <a href="//m3w.cn/uniapp" target="_blank" class="clear-style barcode-view">
-        <div class="barcode-img-box">
-          <img src="https://img.cdn.aliyun.dcloud.net.cn/guide/uniapp/hello-uni-qq.png" width="160" />
-        </div>
-        <b>QQ小程序版</b>
-      </a>
-      <a href="//m3w.cn/uniapp" target="_blank" class="clear-style barcode-view">
-        <div class="barcode-img-box">
-          <img src="https://img.cdn.aliyun.dcloud.net.cn/guide/uniapp/hello-uni-qa-union.png" width="160" />
-        </div>
-        <b>快应用</b>
-      </a>
-      <a href="https://so.mp.360.cn/mp.html?appid=qh4j181qqtru354st6" target="_blank" class="clear-style barcode-view">
-        <div class="barcode-img-box">
-          <img src="https://img.cdn.aliyun.dcloud.net.cn/guide/uniapp/hello-uni-mp-360-qr.png" width="160" />
-        </div>
-        <b>360小程序</b>
-      </a>
-    </div>
-    <p>
-        <em>注：某些平台不能提交简单demo，故补充了一些其他功能；hello uni-app示例代码可从[github](https://github.com/dcloudio/hello-uniapp)获取</em></br>
-        <em>快应用仅支持 vivo 、oppo、华为</em></br>
-        <em>360小程序仅 windows平台支持，需要在360浏览器中打开</em></br>
-    </p>
-</div>
+3.2.1 填写日常/线上环境的部署配置
 
-`uni-app`官网文档详见[https://uniapp.dcloud.io](https://uniapp.dcloud.io)
+按照"?"提示，依次填写部署配置信息。其中：
 
-更多uni-app的模板、示例详见[插件市场](https://ext.dcloud.net.cn/)
+- 「GitHub」需按说明，在GitHub仓库内配置您的阿里云AccessKeyId、AccessKeySecret。
+  
+<img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/uniapp/dist.png" width="300">
 
+- 「纯静态网站」需勾选“是”，让云开发平台可以直接将「资源路径」中的本地静态资源，上传到云端供网站使用。
+   如有特殊需求，如希望在本地完成uni-app generate，或者更多的shell脚本操作，则需要勾选“否”，并在.gitignore中添加/dist目录。之后，云开发平台会在部署项目时，自动调用根目录下的build.sh脚本，执行其中的uni-app generate，或其它shell脚本指令，完成生成/dist目录中静态资源的步骤。而后在部署过程中，将「资源路径」中的本地静态资源，上传到云端供网站使用。
+
+- 「资源路径」需填写“./dist/build/h5”，因为uniapp框架生成的静态资源，默认是存放在dist目录下h5文件夹中的。开发平台会将该目录下的文件完整存储到OSS中，供网站访问使用。
+
+- OSS配置中，需要填写要部署到的OSS Bucket与OSS地域。关于OSS，可打开https://oss.console.aliyun.com/bucket ，开通OSS服务，并创建OSS Bucket。若要用的域名暂无公安部备案信息可用，建议选择中国内地以外的OSS地域创建Bucket，如“美国-硅谷”。开通OSS和创建OSS Bucket不收取用户费用。
+
+    新建OSS Bucket及查看Bucket列表的链接：https://oss.console.aliyun.com/bucket
+
+    新建及查看操作示意图：
+
+    <img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/uniapp/oss_new1.png" width="450">
+<br/>
+    <img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/uniapp/oss_new2.png" width="450">
+
+3.2.2 填写日常/线上环境的分支管理
+
+按需选择要发布的代码所在的分支，可新建分支（从主干分支分叉）或选择已有分支。建议可以使用新建分支，创建名称更规范的代码分支。
+
+<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/branch.png" width="300">
+
+3.3 进行项目的部署和查看
+
+依次点击「部署」「确定」，即可启动日常/线上环境的发布流程。对于每个代码分支，要求先发布日常环境，再发布线上。若不需多套环境，则可以只使用日常环境，或者发布一次日常环境后，仅使用线上环境即可。
+
+<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/deploy.png" width="300">
+
+在部署完成后，部署状态会显示为“已部署”。且部署网站的记录和过程，也会被完整记录下来：
+
+<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/main.png" width="600">
+
+可点击部署记录的「查看结果」来查看部署到OSS存储中的静态资源。并将资源的链接复制下来，供其它网站等引用访问。
+
+<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/result.png" width="400">
+
+<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/result_download.png" width="350">
+
+可点击部署记录的「查看日志」查看部署的详细过程，并在部署发生错误时，精确定位学习错误情况。
+
+<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/log.png" width="450">
+
+部署操作可以在每次更新博客内容并push后再次进行，实现静态网站内容的按需实时更新。
+
+3.4 将OSS存储中的项目发布为网站链接
+
+发布到OSS存储中的资源，由于相关政策和要求，不能使用「查看结果」中的链接和域名直接访问，需要将*OSS Bucket的访问域名* 和 *自己的域名* 做双向绑定和解析。操作步骤如下：
+
+3.4.1 绑定OSS Bucket的访问域名到自己的域名上
+
+需要在 https://oss.console.aliyun.com/bucket 中查看OSS列表，点击进入自己使用的Bucket，选择「传输管理」「绑定域名」，输入自己的域名，点击确定即可。
+
+<img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/uniapp/domain_1.png" width="500">
+
+3.4.2 解析自己的域名到OSS Bucket的访问域名上
+
+打开自己域名的DNS解析控制台，使用阿里云域名或其它提供商的域名均可，此处以阿里云为例：
+
+首先，找到自己要解析的域名，添加/修改一条解析记录：
+
+<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/cname.png" width="650">
+
+如下图所示，配置CNAME、自己的域名、记录值：
+
+<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/cname_2.png" width="400">
+
+记录值查看方法示意图：
+
+<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/oss_domain.png" width="600">
+
+完成配置后，稍等片刻，确定使用https://zijian.aliyun.com/ ，或者ping/dig/nslookup等指令可以查找到本域名的解析情况。
+
+3.4.3 当URL仅访问目录而非目录下的HTML文件时，由OSS托管路由自动定向至目录下的指定HTML文件
+
+某些前端项目（如Hexo）生成的静态代码，其HTML中嵌入的链接地址是不含index.html的。这要求放置HTML文件的存储，或NGINX服务器等，有将裸访问路径自动对应到具体HTML文件的能力。
+
+OSS Bucket具有该托管能力，需要在使用的OSS Bucket内，选择「基础设置」「静态页面」，并如下图所示，填写默认首页为index.html，开通子目录首页功能，并点击「保存」。
+
+<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/oss_index.png" width="350">
+
+3.4.4 部署完成，查看部署结果
+
+访问**域名+静态资源路径**，如 mydomain.com/index.html ， 即可看到网页内容：
+
+<img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/uniapp/index.png" width="650">
+
+3.5 （可选）使用CDN加速域名访问，节约流量费用
+
+可点击「部署配置」中的「如何配置CDN加速」，将自己的域名与CDN加速绑定，从而加速网站访问。
